@@ -1,0 +1,23 @@
+{
+  "name": "Instagram_AutoLiker",
+  "version": "1.0.0",
+  "description": "I am making this project just for Learning Purpose.",
+  "main": "instalogin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityaSrivastava29/Instagram-Post-Auto-Liker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityaSrivastava29/Instagram-Post-Auto-Liker/issues"
+  },
+  "homepage": "https://github.com/adityaSrivastava29/Instagram-Post-Auto-Liker#readme",
+  "dependencies": {
+    "puppeteer": "^10.0.0"
+  }
+}
