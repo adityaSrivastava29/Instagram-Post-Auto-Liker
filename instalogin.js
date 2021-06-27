@@ -2,10 +2,17 @@ const puppeteer = require("puppeteer");
 //const id = "kaleenbhaiya___07";
 const id = "hovih38053@0ranges.com";
 const pw = "qwerty@123";
-const search ="vivekmishra7368";
+const search ="nietgreaternoida";
+//"the_engineer_bro";
+//"rvcjinsta";
+//"yogeshsingh010";
+//"i_m_sundaram"; 
+//"pepcoding";
+//"cre_ativemind07";
+//"vivekmishra7368";
 //"atulsingh.abhi";
 //cre_ativemind07
-let NoofPost = 12;
+let NoofPost = 10;
 (async function () {
     try{
         let browser = await puppeteer.launch({
@@ -33,6 +40,7 @@ let NoofPost = 12;
         await tab.waitForSelector('input[placeholder="Search"]');
         await tab.type('input[placeholder="Search"]',search);  
         // search 
+        //await tab.waitForSelector(`.fuqBx a[href="/${search}/"]`);
         await tab.waitForSelector(`.fuqBx a[href="/${search}/"]`);
         await tab.click(`.fuqBx a[href="/${search}/"]`);
         // click
@@ -56,14 +64,13 @@ let NoofPost = 12;
 
         for(let i=0;i<NoofPost;i++)
         {
-            await tab.waitForSelector('.fr66n button.wpO6b .QBdPU  svg[aria-label="Like"]');
-            await tab.click('.fr66n button.wpO6b .QBdPU  svg[aria-label="Like"]');
+            await tab.waitForSelector('.fr66n button.wpO6b .QBdPU  svg[aria-label="Like"]',{timeout: 1000000});
+            await tab.click('.fr66n button.wpO6b .QBdPU  svg[aria-label="Like"]',{timeout: 10000});
             
-            await tab.waitForSelector('.coreSpriteRightPaginationArrow');
-             await tab.click('.coreSpriteRightPaginationArrow');
+             await tab.waitForSelector('.coreSpriteRightPaginationArrow',{timeout: 1000000});
+             await tab.click('.coreSpriteRightPaginationArrow',{timeout: 10000});
         }
-        
-        console.log("Successfull");
+        console.log(`Successfully liked ${NoofPost} posts`);
 
     }
     catch(err){
