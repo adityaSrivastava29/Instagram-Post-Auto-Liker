@@ -8,5 +8,6 @@ For like the post of user you have to provide the username and no. of post you w
 ## Technology Used
 ```
 Javascript
-puppeteer 10.0.0 (Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol.)
+puppeteer 10.0.0   (Puppeteer is a Node library which provides a 
+high-level API to control Chrome or Chromium over the DevTools Protocol.)
 ```
